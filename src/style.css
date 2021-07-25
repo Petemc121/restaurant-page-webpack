@@ -1,0 +1,80 @@
+HTML, body {
+    margin: 0px;
+    padding: 0px;
+      border: 0px;
+    }
+
+    @font-face {
+        font-family: 'myfont';
+        src: url('./Pacifico-Regular.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+    
+.title {
+    width:100%;
+    font-size:50px;
+    font-family:'myfont';
+    color:#E09F3E;
+    background-color:#9E2A2B;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-weight:bold;
+}
+
+.header {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color:#9E2A2B;
+    height:100px;
+    width:100%;
+    margin-top:-8px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.navs{
+    font-size:40px;
+    color:#FFF3B0;
+    transition:all 0.2s linear;
+    height:100px;
+    line-height:100px;
+    position:relative;
+    text-align:center;
+    font-weight:none;
+
+}
+
+
+.navs:hover{
+    font-size:42px;
+    color:#335C67;
+    background-color:#E09F3E;
+}
+
+.homeImage{
+    background:url('./icon.jpg');
+    height:640px;
+    width:1024px;
+    margin:20px auto;
+  
+}
+
+.slogan{
+    font-family:'myfont';
+    font-size:35px;
+    color:#FFF3B0;
+    text-align:center;
+    margin-top:50px;
+}
+a
+{
+    text-decoration:none;
+    width:25%;
+}
+
+body {
+    background-color:#540B0E;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "resturant-page",
+  "version": "1.0.0",
+  "description": "A restaurant website page build using webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petemc121/restaurant-page-webpack.git"
+  },
+  "keywords": [
+    "Restaurant"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petemc121/restaurant-page-webpack/issues"
+  },
+  "homepage": "https://github.com/Petemc121/restaurant-page-webpack#readme",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
