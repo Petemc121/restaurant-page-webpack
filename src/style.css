@@ -70,6 +70,13 @@ HTML, body {
  width:80%;
 }
 
+.menu {
+    display:flex;
+    width:80%;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 .slogan{
     font-family:'myfont';
     font-size:35px;
