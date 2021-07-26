@@ -24,7 +24,7 @@ HTML, body {
     font-weight:bold;
 }
 
-.header {
+.navBar {
     display:flex;
     justify-content:space-evenly;
     align-items:center;
@@ -44,22 +44,30 @@ HTML, body {
     position:relative;
     text-align:center;
     font-weight:none;
-
+    width:25%;
+    cursor:pointer;
 }
 
-
-.navs:hover{
+.navs:hover {
     font-size:42px;
     color:#335C67;
     background-color:#E09F3E;
 }
-
 .homeImage{
     background:url('./icon.jpg');
     height:640px;
     width:1024px;
     margin:20px auto;
   
+}
+
+.about {
+ font-family:'myFont';
+ font-size:35px;
+ color:#FFF3B0;
+ text-align:center;
+ margin:100px auto;
+ width:80%;
 }
 
 .slogan{
@@ -69,11 +77,7 @@ HTML, body {
     text-align:center;
     margin-top:50px;
 }
-a
-{
-    text-decoration:none;
-    width:25%;
-}
+
 
 body {
     background-color:#540B0E;
