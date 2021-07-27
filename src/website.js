@@ -87,9 +87,11 @@ return main;
 
 function initializeWebsite() {
     const content = document.getElementById('content');
-
-    content.appendChild(createHeader())
-    content.appendChild(createNavbar())
+    const header = document.createElement('div');
+    header.setAttribute('id', 'header')
+    header.appendChild(createHeader())
+    header.appendChild(createNavbar())
+    content.appendChild(header);
     content.appendChild(loadMain());
     loadHome();
 }

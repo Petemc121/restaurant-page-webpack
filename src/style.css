@@ -1,8 +1,46 @@
-HTML, body {
-    margin: 0px;
-    padding: 0px;
-      border: 0px;
-    }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
     @font-face {
         font-family: 'myfont';
@@ -11,7 +49,13 @@ HTML, body {
         font-style: normal;
       }
       
-    
+#header
+{
+    background-color:#9E2A2B;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}   
 .title {
     width:100%;
     font-size:50px;
@@ -31,12 +75,12 @@ HTML, body {
     background-color:#9E2A2B;
     height:100px;
     width:100%;
-    margin-top:-8px;
     font-family:'Courier New', Courier, monospace;
+    margin-top:5px;
 }
 
 .navs{
-    font-size:40px;
+
     color:#FFF3B0;
     transition:all 0.2s linear;
     height:100px;
@@ -48,18 +92,101 @@ HTML, body {
     cursor:pointer;
 }
 
+@media (max-width:600px)
+{
+    .navs {
+        font-size:20px;
+        height:60px;
+        line-height:60px;
+    }
+
+    .navBar
+    {
+        height:60px;
+    }
+
+    .navs:hover {
+
+        font-size:25px;
+       
+    }
+
+    .homeImage
+    {
+        height:80%;
+        width:80%;
+    }
+
+    .locationImage
+    {
+        height:60%;
+        width:60%;
+    }
+
+}
+
+@media (min-width:600px)
+{
+    .navs {
+        font-size:35px;
+    }
+
+    .navs:hover {
+
+        font-size:38px;
+       
+    }
+
+    .homeImage
+{
+    height:60%;
+    width:60%;
+}
+
+
+.locationImage
+{
+
+    height:40%;
+    width:40%;
+}
+}
+
 .navs:hover {
-    font-size:42px;
+    font-weight:bold;
     color:#335C67;
     background-color:#E09F3E;
 }
-.homeImage{
-    background:url('./icon.jpg');
-    height:640px;
-    width:1024px;
+
+.homeImageCon
+{
     margin:20px auto;
-  
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
 }
+
+.locationImageCon
+{
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+
+.contactDetails{
+    font-family:'myfont';
+    font-size:30px;
+    color:#FFF3B0;
+    text-align:center;
+    margin-top:50px;
+}
+
+
+
 
 .about {
  font-family:'myFont';
@@ -68,6 +195,11 @@ HTML, body {
  text-align:center;
  margin:100px auto;
  width:80%;
+}
+
+.aboutText {
+    margin:100px 0px;
+    line-height:50px;
 }
 
 .menu {
@@ -80,26 +212,30 @@ HTML, body {
 }
 
 .menuImage {
-    max-height:300px;
-    max-width:300px;
+    max-height:200px;
+    width:100%;
+    margin-bottom:30px;
 }
 
 .menuCards {
     margin:30px 30px;
     width:300px;
-    height:350px;
+    height:320px;
     font-family:'myFont';
     font-size:35px;
     color:#FFF3B0;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:space-between;
+    justify-content:flex-start;
+    border:2px solid #E09F3E;
+    border-radius:5px;
+
 }
 
 .slogan{
     font-family:'myfont';
-    font-size:35px;
+    font-size:30px;
     color:#FFF3B0;
     text-align:center;
     margin-top:50px;
@@ -109,3 +245,4 @@ HTML, body {
 body {
     background-color:#540B0E;
 }
+

@@ -3,10 +3,11 @@ import Icon from './icon.jpg'
 function createHome()
 {
     const div = document.createElement('div');
-    div.classList.add('homeImage')
+    div.classList.add('homeImageCon')
 
     const myIcon = new Image();
     myIcon.src = Icon;
+    myIcon.classList.add('homeImage')
 
 
     div.appendChild(myIcon);
